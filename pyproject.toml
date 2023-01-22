@@ -9,6 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 openai = "^0.26.1"
+fastapi = {extras = ["all"], version = "^0.89.1"}
 
 
 [tool.poetry.group.dev.dependencies]

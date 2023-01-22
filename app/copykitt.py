@@ -31,7 +31,7 @@ def validate_length(prompt: str) -> bool:
 
 
 def generate_keywords(prompt: str) -> list[str]:
-    """Generate keywords related to the argument using openai"""
+    """Generate keywords related to the argument using openai."""
 
     openai.api_key = os.getenv("OPENAI_API_KEY")
     enriched_prompt = f"Generate upbeat branding keywords for {prompt}"
@@ -54,7 +54,7 @@ def generate_keywords(prompt: str) -> list[str]:
 
 
 def generate_branding_snippet(prompt: str) -> str:
-    """Generate branding snippets related to the argument using openai"""
+    """Generate branding snippets related to the argument using openai."""
 
     openai.api_key = os.getenv("OPENAI_API_KEY")
     enriched_prompt = f"Generate upbeat branding snippet for {prompt}"
