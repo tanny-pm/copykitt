@@ -2,7 +2,12 @@ from fastapi import FastAPI, Query
 
 from copykitt import generate_branding_snippet, generate_keywords
 
-app = FastAPI()
+app = FastAPI(
+    title="Copykitt API",
+    description="Copykitt REST API",
+    version="0.1.0",
+    terms_of_service="http://example.com/terms/",
+)
 
 MAX_INPUT_LENGTH = 32
 
