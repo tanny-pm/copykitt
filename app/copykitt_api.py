@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Query
+from mangum import Mangum
 
 from copykitt import generate_branding_snippet, generate_keywords
 
@@ -8,6 +9,7 @@ app = FastAPI(
     version="0.1.0",
     terms_of_service="http://example.com/terms/",
 )
+handler = Mangum(app)
 
 MAX_INPUT_LENGTH = 32
 
