@@ -1,13 +1,13 @@
 import CopyKitt from "@/components/copykitt";
 import { Inter } from "@next/font/google";
 import Head from "next/head";
-// import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="{styles.container}">
+    <div className={styles.container}>
       <Head>
         <title>CopyKitt | AI Generated Marketing</title>
         <meta
