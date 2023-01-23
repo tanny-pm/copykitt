@@ -1,1 +1,5 @@
 GET http://127.0.0.1:8000
+
+###
+
+GET https://jc6l1abonc.execute-api.ap-northeast-1.amazonaws.com/prod/generate_snippet?propmt=coffie
