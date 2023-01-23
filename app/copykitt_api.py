@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Query
+from fastapi.middleware.cors import CORSMiddleware
 from mangum import Mangum
 
 from copykitt import generate_branding_snippet, generate_keywords
@@ -12,6 +13,14 @@ app = FastAPI(
 handler = Mangum(app)
 
 MAX_INPUT_LENGTH = 32
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/generate_snippet")
