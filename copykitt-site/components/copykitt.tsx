@@ -66,7 +66,13 @@ const CopyKitt: React.FC = () => {
       <div className="max-w-md m-auto p-2">
         <div className="bg-slate-800 p-6 rounded-md text-white">
           <div className="text-center my-6">
-            <Image src={logo} alt={"logo"} width={42} height={42} />
+            <Image
+              src={logo}
+              alt={"logo"}
+              width={42}
+              height={42}
+              className="m-auto"
+            />
             <h1 className={gradientTextStyle + " text-3xl font-light"}>
               CopyKitt
             </h1>
